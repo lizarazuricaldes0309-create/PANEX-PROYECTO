@@ -36,7 +36,7 @@ export default function Hero() {
             <img
               src="https://i.ibb.co/RTLxqNQ0/images-q-tbn-ANd9-Gc-T2gi-Qs-D4-GNEpo-Pv-RNXS8mikk-VAQZt1-Vcz3-Avyzrif-DPIJVxxuc-Ig-Y1-H91-O-s-10.jpg"
               alt="Panes recién horneados de PANEX"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain bg-trigo/15"
             />
           </div>
           <div className="absolute -bottom-6 -left-6 bg-crema rounded-2xl shadow-panel px-5 py-4 max-w-[220px]">
