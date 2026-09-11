@@ -3,6 +3,8 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import CartDrawer from './components/CartDrawer'
 import Home from './pages/Home'
+import Panes from './pages/Panes'
+import Ubicacion from './pages/Ubicacion'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Profile from './pages/Profile'
@@ -18,6 +20,8 @@ export default function App() {
       <main className="flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/panes" element={<Panes />} />
+          <Route path="/ubicacion" element={<Ubicacion />} />
           <Route path="/ingresar" element={<Login />} />
           <Route path="/registrarse" element={<Register />} />
           <Route path="/perfil" element={<Profile />} />
