@@ -7,7 +7,14 @@ html {
 }
 
 body {
-  @apply bg-masa text-horno font-body;
+  @apply text-horno font-body;
+  background-color: #FBF3E4;
+  /* Textura sutil de puntitos color trigo, sobre un degradado cálido de fondo */
+  background-image:
+    radial-gradient(circle, #D9A44133 1.5px, transparent 1.5px),
+    radial-gradient(circle at 15% 20%, #FFF7E8 0%, #FBF3E4 45%, #F3E4C9 100%);
+  background-size: 26px 26px, 100% 100%;
+  background-attachment: fixed;
 }
 
 @keyframes fadeIn {
