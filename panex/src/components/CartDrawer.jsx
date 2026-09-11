@@ -6,8 +6,17 @@ import { supabase } from '../lib/supabaseClient'
 import PaymentMethods from './PaymentMethods'
 
 export default function CartDrawer() {
-  const { items, increaseQuantity, decreaseQuantity, removeItem, total, isOpen, setIsOpen, clearCart } =
-    useCart()
+  const {
+    items,
+    increaseQuantity,
+    decreaseQuantity,
+    removeItem,
+    total,
+    isOpen,
+    setIsOpen,
+    clearCart,
+    maxQuantity,
+  } = useCart()
   const { profile, session } = useAuth()
   const [paymentMethod, setPaymentMethod] = useState('Efectivo contra entrega')
   const [sending, setSending] = useState(false)
@@ -89,7 +98,8 @@ export default function CartDrawer() {
                   <span className="font-body text-sm w-5 text-center">{item.quantity}</span>
                   <button
                     onClick={() => increaseQuantity(item.id)}
-                    className="w-7 h-7 rounded-full bg-horno/10 text-horno hover:bg-amaranto hover:text-crema transition-colors"
+                    disabled={item.quantity >= maxQuantity}
+                    className="w-7 h-7 rounded-full bg-horno/10 text-horno hover:bg-amaranto hover:text-crema transition-colors disabled:opacity-30 disabled:hover:bg-horno/10 disabled:hover:text-horno"
                   >
                     +
                   </button>
@@ -97,6 +107,11 @@ export default function CartDrawer() {
                     Bs {(item.price * item.quantity).toFixed(2)}
                   </span>
                 </div>
+                {item.quantity >= maxQuantity && (
+                  <p className="font-body text-[11px] text-amaranto mt-1">
+                    Máximo {maxQuantity} unidades de este pan por pedido.
+                  </p>
+                )}
               </div>
             </div>
           ))}
