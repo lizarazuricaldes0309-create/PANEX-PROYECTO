@@ -1,6 +1,6 @@
 // Coordenadas exactas de PANEX (reemplázalas si cambias de ubicación)
-const LAT = -17.605229340395432
-const LNG = -63.13507710707962
+const LAT = -17.604968637687104
+const LNG = -63.13474461925721
 
 export default function LocationSection() {
   const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${LAT},${LNG}`
@@ -16,7 +16,7 @@ export default function LocationSection() {
             Ven a recoger tu pan directo del horno
           </h2>
           <p className="font-body text-masa/75 leading-relaxed max-w-md">
-            Av. Panadería 123, Zona Central, La Paz, Bolivia. También entregamos
+            Santa Cruz , Warnes , Zona Central-Satelite Norte , Bolivia. También entregamos
             a domicilio dentro de la ciudad — coordina el envío por WhatsApp
             al confirmar tu pedido.
           </p>
