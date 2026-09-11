@@ -32,7 +32,7 @@ export const breads = [
     category: 'tradicionales',
     price: 0.8,
     description: 'Pan redondo de corteza dorada, primo hermano de la marraqueta, ideal para el desayuno con café o mate.',
-    image: 'https://placehold.co/600x450/D9A441/3B2A21?text=crusty+bread+rolls',
+    image: 'https://i.ibb.co/pvdCHhKY/images-q-tbn-ANd9-Gc-TPQGzpfe5-BMNx-Lv-Qd0-NU5-Moha-OKcj00-YD-E-wigdbpe-Q-s-10.jpg',
   },
   {
     id: 'sarnita',
