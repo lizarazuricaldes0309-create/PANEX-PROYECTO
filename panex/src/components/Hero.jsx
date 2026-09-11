@@ -34,7 +34,7 @@ export default function Hero() {
         <div className="relative">
           <div className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-panel">
             <img
-              src="https://source.unsplash.com/800x1000/?fresh,bread,bakery"
+              src="https://i.ibb.co/RTLxqNQ0/images-q-tbn-ANd9-Gc-T2gi-Qs-D4-GNEpo-Pv-RNXS8mikk-VAQZt1-Vcz3-Avyzrif-DPIJVxxuc-Ig-Y1-H91-O-s-10.jpg"
               alt="Panes recién horneados de PANEX"
               className="w-full h-full object-cover"
             />
