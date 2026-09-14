@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-masa">
+    <section className="relative overflow-hidden">
       <div className="mx-auto max-w-6xl px-5 pt-16 pb-20 md:pt-24 md:pb-28 grid md:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
         <div>
           <span className="inline-block font-body text-sm font-semibold text-andino bg-andino/10 px-3 py-1 rounded-full mb-6">
