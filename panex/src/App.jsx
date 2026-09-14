@@ -10,11 +10,11 @@ import Register from './pages/Register'
 import Profile from './pages/Profile'
 import Reviews from './pages/Reviews'
 import Admin from './pages/Admin'
-import NotFound from './pages/NotFound'
+import NotFound from './pages/NotFound' 
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-masa">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
 
       <main className="flex-1">

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-masa">
@@ -16,18 +18,18 @@ export default function Hero() {
             armados en tu carrito y confirmados directo por WhatsApp.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <a
-              href="#panes"
+            <Link
+              to="/panes"
               className="inline-flex items-center gap-2 bg-amaranto text-crema font-body font-semibold px-6 py-3 rounded-full hover:bg-amaranto2 transition-colors"
             >
               Ver el catálogo
-            </a>
-            <a
-              href="#ubicacion"
+            </Link>
+            <Link
+              to="/ubicacion"
               className="font-body text-horno2 font-medium hover:text-amaranto transition-colors"
             >
               ¿Dónde nos encontramos? →
-            </a>
+            </Link>
           </div>
         </div>
 
